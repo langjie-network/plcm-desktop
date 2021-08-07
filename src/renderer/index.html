@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="lib/layui/css/layui.css" />
+    <script src="lib/layui/layui.js"></script>
+    <style>
+        #body_countnt_id{
+
+            font-size: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree site-demo-nav" lay-filter="leftNav">
+               <li class="layui-nav-item layui-nav-itemed">
+                   <a class="javascript:;" href="javascript:;">商品分类1</a>
+               </li>
+            </ul>
+    
+        </div>
+    </div>
+    <div class="layui-tab layui-tab-brief" lay-filter="demoTitle">
+        <div class="layui-body layui-tab-content site-demo site-demo-body">
+            <div class="listpros">
+    <!--            <div class="probox">-->
+    <!--                <div class="pimg"><img src="../images/timg.png"></div>-->
+    <!--                <div class="pname">商品名称商品名称</div>-->
+    <!--            </div>-->
+    <!--            <div class="probox">-->
+    <!--                <div class="pimg"><img src="../images/timg.png"></div>-->
+    <!--                <div class="pname">商品名称商品名称</div>-->
+    <!--            </div>-->
+    <!--            <div class="probox">-->
+    <!--                <div class="pimg"><img src="../images/timg.png"></div>-->
+    <!--                <div class="pname">商品名称商品名称</div>-->
+    <!--            </div>-->
+    <!--            <div class="probox">-->
+    <!--                <div class="pimg"><img src="../images/timg.png"></div>-->
+    <!--                <div class="pname">商品名称商品名称</div>-->
+    <!--            </div>-->
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+
+</html>
+
+
+
+<script>
+      let temp= layui.$("#body_countnt_id_template").html()
+      let html= layui.laytpl(temp).render({name:"zs"})
+      layui.$("#body_countnt_id").html(html)
+
+</script>
