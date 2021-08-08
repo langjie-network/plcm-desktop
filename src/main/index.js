@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+const config= require("./config.js")
 function createWindow () {
     const win = new BrowserWindow({
       width: 800,
@@ -9,8 +10,7 @@ function createWindow () {
 
       }
     })
-  
-    win.loadURL('https://action.langjie.com')
+    win.loadURL(config.actionUrl)
     win.webContents.openDevTools()
   }
 
