@@ -1,1 +1,0 @@
-CREATE TABLE t_user_res (id INTEGER NOT NULL, name varchar(200) DEFAULT NULL, local_path varchar(200) DEFAULT NULL, gmt_create varchar(200) DEFAULT NULL,gmt_modified varchar(200)  DEFAULT NULL,version1 INTEGER NOT NULL, PRIMARY KEY (id))
