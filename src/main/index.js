@@ -10,7 +10,7 @@ function createWindow () {
       }
     })
   
-    win.loadURL('http://localhost:7001/index')
+    win.loadURL('https://action.langjie.com')
     win.webContents.openDevTools()
   }
 
