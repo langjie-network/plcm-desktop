@@ -11,7 +11,7 @@ function createWindow () {
       }
     })
     win.loadURL(config.actionUrl)
-    win.webContents.openDevTools()
+    //win.webContents.openDevTools()
   }
 
   app.whenReady().then(() => {
